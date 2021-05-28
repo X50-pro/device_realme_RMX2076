@@ -5,7 +5,7 @@
 #
 
 # Inherit from sm8250-common
-$(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
+$(call inherit-product, device/realme/sm8250-common/kona.mk)
 
 # Keylayout
 PRODUCT_COPY_FILES += \
