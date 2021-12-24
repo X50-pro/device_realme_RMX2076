@@ -18,7 +18,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/RMX2076-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -73,13 +73,6 @@ PRODUCT_PACKAGES += \
     libcryptfs_hw \
     vendor.qti.hardware.cryptfshw@1.0
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
-PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
-
 # Display/Graphics
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
@@ -99,7 +92,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1 \
-    vendor.xiaomi.hardware.fingerprintextension@1.0
+    vendor.realme.hardware.fingerprintextension@1.0
 
 # FM
 PRODUCT_PACKAGES += \
@@ -141,7 +134,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_picasso
+    android.hardware.lights-service.realme_RMX2076
 
 # Media
 PRODUCT_PACKAGES += \
@@ -185,10 +178,6 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     GestureLineOverlay \
     MccMncOverlay \
-    MiuiBluetoothOverlay \
-    MiuiFrameworkResOverlay \
-    MiuiSettingsResOverlay \
-    MiuiSystemUIResOverlay \
     NetworkStackOverlay \
     SystemUIResCommon \
     TelecommResCommon \
@@ -203,11 +192,6 @@ PRODUCT_PACKAGES += \
 # OTA
 PRODUCT_HOST_PACKAGES += \
     signapk
-
-# Perf
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
 
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0 \
@@ -224,7 +208,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_SYSTEM)/etc/powerhint.json
 
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.picasso-libperfmgr
+    android.hardware.power-service.RMX2076-libperfmgr
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
@@ -254,8 +238,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel \
-    hardware/xiaomi
+    hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \

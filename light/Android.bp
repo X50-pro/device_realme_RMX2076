@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.lights-service.xiaomi_picasso",
+    name: "android.hardware.lights-service.realme_RMX2076",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.lights.xiaomi_picasso.rc"],
-    vintf_fragments: ["aidl/android.hardware.lights.xiaomi_picasso.xml"],
+    init_rc: ["aidl/android.hardware.lights.realme_RMX2076.rc"],
+    vintf_fragments: ["aidl/android.hardware.lights.realme_RMX2076.xml"],
     shared_libs: [
         "libbase",
         "liblog",

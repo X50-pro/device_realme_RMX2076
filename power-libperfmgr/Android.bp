@@ -14,13 +14,13 @@
 // limitations under the License.
 
 cc_library_headers {
-    name: "xiaomi_power_headers",
+    name: "realme_power_headers",
     vendor_available: true,
     export_include_dirs: ["."],
 }
 
 cc_library {
-    name: "libdisppower-xiaomi",
+    name: "libdisppower-realme",
     srcs: [
         "disp-power/InteractionHandler.cpp",
     ],
@@ -34,10 +34,10 @@ cc_library {
 }
 
 cc_binary {
-    name: "android.hardware.power-service.picasso-libperfmgr",
+    name: "android.hardware.power-service.RMX2076-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.picasso-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.picasso.xml"],
+    init_rc: ["aidl/android.hardware.power-service.RMX2076-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.RMX2076.xml"],
     shared_libs: [
         "android.hardware.power-ndk_platform",
         "libbase",
@@ -45,7 +45,7 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower-xiaomi",
+        "libdisppower-realme",
         "libperfmgr",
         "pixel-power-ext-ndk_platform",
     ],

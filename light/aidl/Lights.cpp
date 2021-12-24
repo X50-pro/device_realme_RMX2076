@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.lights-service_xiaomi.picasso"
+#define LOG_TAG "android.hardware.lights-service_realme.RMX2076"
 
 #include "Lights.h"
 #include <android-base/file.h>

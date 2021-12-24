@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power-service.picasso-libperfmgr"
+#define LOG_TAG "android.hardware.power-service.RMX2076-libperfmgr"
 
 #include <thread>
 

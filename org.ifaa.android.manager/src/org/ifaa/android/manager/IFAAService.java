@@ -18,9 +18,9 @@ public class IFAAService extends Service {
 
     private final IBinder mIFAABinder = new IIFAAService.Stub() {
         private static final String INTERFACE_DESCRIPTOR =
-                "vendor.xiaomi.hardware.mlipay@1.0::IMlipayService";
+                "vendor.realme.hardware.mlipay@1.0::IMlipayService";
         private static final String SERVICE_NAME =
-                "vendor.xiaomi.hardware.mlipay@1.0::IMlipayService";
+                "vendor.realme.hardware.mlipay@1.0::IMlipayService";
 
         private static final int CODE_PROCESS_CMD = 1;
 

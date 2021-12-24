@@ -7,8 +7,8 @@
 
 set -e
 
-DEVICE=picasso
-VENDOR=xiaomi
+DEVICE=RMX2076
+VENDOR=realme
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

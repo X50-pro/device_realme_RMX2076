@@ -7,8 +7,8 @@
 
 set -e
 
-DEVICE=picasso
-VENDOR=xiaomi
+DEVICE=RMX2076
+VENDOR=realme
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -27,7 +27,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
 # Warning headers and guards
-write_headers
+write_headers "RMX2076 2076PU RMX2072 RMX2071 RMX2071CN"
 
 # The standard device blobs
 write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt" true

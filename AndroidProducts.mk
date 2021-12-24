@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_picasso.mk
+    $(LOCAL_DIR)/lineage_RMX2076.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_picasso-user \
-    lineage_picasso-userdebug \
-    lineage_picasso-eng
+    lineage_RMX2076-user \
+    lineage_RMX2076-userdebug \
+    lineage_RMX2076-eng

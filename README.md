@@ -3,7 +3,7 @@ Copyright (C) 2020 The LineageOS Project
 Device configuration for Xiaomi Redmi K30 5G
 ============================================
 
-The Xiaomi Redmi K30 5G (codenamed _"picasso"_) is a mid range smartphone from Xiaomi's sub-brand Redmi.
+The Xiaomi Redmi K30 5G (codenamed _"RMX2076"_) is a mid range smartphone from Xiaomi's sub-brand Redmi.
 
 It was announced in December 2019 and released in January 2020.
 
